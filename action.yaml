@@ -1,0 +1,12 @@
+name: "sample-composite-action"
+description: "sample-composite-action"
+inputs:
+  test-input:
+    description: "test input data"
+    required: true
+    default: ""
+runs:
+  using: "composite"
+  steps:
+    - run: swift ${{ github.action_path }}/Sources/main.swift
+      shell: bash
