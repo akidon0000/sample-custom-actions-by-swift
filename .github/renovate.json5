@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "github>akidon0000/renovate-config"
+  ]
+}

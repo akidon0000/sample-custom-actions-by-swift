@@ -1,5 +1,7 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
+    ":automergePatch",
     "config:recommended"
   ],
   "dependencyDashboard": false,
@@ -13,4 +15,5 @@
   "major": {
     "enabled": false
   }
+  "reviewers": ["akidon0000"]
 }
