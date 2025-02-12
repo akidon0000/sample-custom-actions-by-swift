@@ -1,0 +1,14 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchManagers": ["swift"],
+      "matchPackagePatterns": [".*"],
+      "groupName": "Swift Dependencies",
+      "schedule": ["weekly"]
+    }
+  ],
+  "labels": ["dependencies"],
+  "timezone": "Asia/Tokyo",
+  "schedule": ["at 02:00 on Monday"]
+}
