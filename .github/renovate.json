@@ -1,11 +1,11 @@
 {
   "extends": [
-    "config:base"
+    "config:recommended"
   ],
   "dependencyDashboard": false,
-  "requiredStatusChecks": null,
+  "ignoreTests": true,
   "schedule": [
-    "every 1 hour after 00:00 and before 23:59 every day"
+    "every 1 hour after 00:00 and before 23:59"
   ],
   "automergeSchedule": [
     "every 1 hour after 00:00 and before 23:59 every day"
