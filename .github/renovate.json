@@ -1,14 +1,30 @@
 {
-  "extends": ["config:base"],
-  "packageRules": [
-    {
-      "matchManagers": ["swift"],
-      "matchPackagePatterns": [".*"],
-      "groupName": "Swift Dependencies",
-      "schedule": ["weekly"]
-    }
+  // ベースとなる設定を読み込む
+  "extends": [
+    "config:base"
   ],
-  "labels": ["dependencies"],
-  "timezone": "Asia/Tokyo",
-  "schedule": ["at 02:00 on Monday"]
+
+  // Dependency Dashboard を無効化する
+  "dependencyDashboard": false,
+
+  // ステータスチェックを行わない
+  "requiredStatusChecks": null,
+
+  // Renovate の更新を毎日 00:00-23:59 の間に１時間ごとに行う
+  "schedule": [
+    "every 1 hour after 00:00 and before 23:59 every day"
+  ],
+
+  // PR の生成と自動マージを毎日 00:00-23:59 の間に１時間ごとに行う
+  "automergeSchedule": [
+    "every 1 hour after 00:00 and before 23:59 every day"
+  ],
+
+  // major の更新は対象外とする
+  "major": {
+    "enabled": false
+  },
+
+  // パッケージごとのルール決め
+  
 }
